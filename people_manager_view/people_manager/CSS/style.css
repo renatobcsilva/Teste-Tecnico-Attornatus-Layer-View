@@ -1,0 +1,15 @@
+
+/* visited link */
+.navbar a:visited {
+    color:#333333;
+}
+
+/* mouse over link */
+.navbar a:hover {
+    color: #F9A020;
+}
+
+/* selected link */
+#active {
+    color: #ff9b19;
+}
