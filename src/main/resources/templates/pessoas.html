@@ -47,11 +47,11 @@
         <th scope="col">Id</th>
         <th scope="col">Nome</th>
         <th scope="col">Data de Nascimento</th>
-        <th scope="col">Endereço</th>
         <th scope="col">Logradouro</th>
         <th scope="col">CEP</th>
         <th scope="col">Número</th>
         <th scope="col">Cidade</th>
+        <th scope="col">Endereço Principal</th>
         <th scope="col">Ações</th>
       </tr>
     </thead>
@@ -60,11 +60,11 @@
         <th scope="row">[[${pessoa.id}]]</th>
         <td>[[${pessoa.nome}]]</td>
         <td>[[${pessoa.dataNasc}]]</td>
-        <td>[[${pessoa.endereco}]]</td>
         <td>[[${pessoa.logradouro}]]</td>
         <td>[[${pessoa.cep}]]</td>
         <td>[[${pessoa.num}]]</td>
         <td>[[${pessoa.cidade}]]</td>
+        <td>[[${pessoa.enderecoConf}]]</td>
         
         <td>
           <a th:href="@{'/pessoas/' + ${pessoa.id}}" title="Editar pessoa"

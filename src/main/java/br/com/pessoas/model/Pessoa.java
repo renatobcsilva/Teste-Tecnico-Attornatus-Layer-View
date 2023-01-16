@@ -15,10 +15,7 @@ public class Pessoa {
 	
 	@Column(name = "Data de nascimento")
 	private String dataNasc;
-	
-	@Column(name = "Endereço")
-	private String endereco;
-	
+			
 	@Column(name = "Logradouro")
 	private String logradouro;
 	
@@ -31,18 +28,21 @@ public class Pessoa {
 	@Column(name = "Cidade")
 	private String cidade;
 	
+	@Column(name = "EnderecoConf")
+	private String enderecoConf;
+	
 	public Pessoa() {
 		
 	}
 	
-	public Pessoa (String nome, String dataNasc, String endereco, String logradouro, String cep, int num, String cidade) {
+	public Pessoa (String nome, String dataNasc, String logradouro, String cep, int num, String cidade, String enderecoConf) {
 		this.nome = nome;
 		this.dataNasc = dataNasc;
-		this.endereco = endereco;
 		this.logradouro = logradouro;
 		this.cep = cep;
 		this.num = num;
 		this.cidade = cidade;
+		this.enderecoConf = enderecoConf;
 	}
 
 	public long getId() {
@@ -67,14 +67,6 @@ public class Pessoa {
 
 	public void setDataNasc(String dataNasc) {
 		this.dataNasc = dataNasc;
-	}
-
-	public String getEndereco() {
-		return endereco;
-	}
-
-	public void setEndereco(String endereco) {
-		this.endereco = endereco;
 	}
 
 	public String getLogradouro() {
@@ -108,11 +100,19 @@ public class Pessoa {
 	public void setCidade(String cidade) {
 		this.cidade = cidade;
 	}
+	
+	public String getEnderecoConf() {
+		return enderecoConf;
+	}
+
+	public void setEnderecoConf(String enderecoConf) {
+		this.enderecoConf = enderecoConf;
+	}
 
 	@Override
 	public String toString() {
-		return "Pessoa [id=" + id + ", nome=" + nome + ", dataNasc=" + dataNasc + ", endereco=" + endereco
-				+ ", logradouro=" + logradouro + ", cep=" + cep + ", num=" + num + ", cidade=" + cidade + "]";
+		return "Pessoa [id=" + id + ", nome=" + nome + ", dataNasc=" + dataNasc + 
+				", logradouro=" + logradouro + ", cep=" + cep + ", num=" + num + ", cidade=" + cidade + ", enderecoConf=" + enderecoConf + "]";
 	}
 	
 	
