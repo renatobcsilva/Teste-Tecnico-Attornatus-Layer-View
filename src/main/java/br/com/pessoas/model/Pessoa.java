@@ -28,7 +28,7 @@ public class Pessoa {
 	@Column(name = "Cidade")
 	private String cidade;
 	
-	@Column(name = "EnderecoConf")
+	@Column(name = "Endereco Principal")
 	private String enderecoConf;
 	
 	public Pessoa() {
